@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Shuffled Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #131022;
+    --ink-panel: #1D1830;
+    --ink-panel-2: #241E3B;
+    --parchment: #EDE3C8;
+    --muted: #8A82A0;
+    --gold: #C9A44C;
+    --gold-dim: rgba(201,164,76,0.25);
+    --crimson: #B24C4C;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 18px;
+    background: radial-gradient(ellipse at top, #1c1733 0%, var(--ink) 60%);
+    color: var(--parchment);
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 540px;
+    background: var(--ink-panel);
+    border: 1px solid var(--gold-dim);
+    border-radius: 16px;
+    padding: 36px 32px 30px;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-family: 'Spectral', serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0 0 8px;
+    color: var(--parchment);
+  }
+
+  .lede {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.55;
+    margin: 0 0 28px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--gold-dim);
+    margin: 26px 0;
+  }
+
+  label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 140px;
+    background: var(--ink);
+    border: 1px solid var(--gold-dim);
+    border-radius: 8px;
+    color: var(--parchment);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    line-height: 1.6;
+    padding: 12px 14px;
+    resize: vertical;
+  }
+
+  textarea::placeholder { color: #574F6E; }
+
+  textarea:focus-visible, input:focus-visible, button:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+
+  .btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+    border-radius: 8px;
+    border: 1px solid var(--gold-dim);
+    background: transparent;
+    color: var(--parchment);
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, transform 0.05s;
+  }
+
+  .btn:hover { border-color: var(--gold); }
+  .btn:active { transform: translateY(1px); }
+
+  .btn-primary {
+    background: var(--gold);
+    color: #201A0C;
+    border-color: var(--gold);
+    font-weight: 600;
+  }
+  .btn-primary:hover { background: #DBB765; }
+
+  input:disabled, button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+
+  .summary-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--ink);
+    border: 1px solid var(--gold-dim);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+
+  .summary-bar strong { color: var(--parchment); }
+
+  .link-btn {
+    background: none;
+    border: none;
+    color: var(--gold);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    padding: 0;
+  }
+
+  .roll-input {
+    width: 100px;
+    background: var(--ink);
+    border: 1px solid var(--gold-dim);
+    border-radius: 8px;
+    color: var(--gold);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 8px;
+    font-weight: 600;
+  }
+
+  .die-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    border: 1px solid var(--gold-dim);
+    background: transparent;
+    color: var(--gold);
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .die-btn:hover { border-color: var(--gold); background: var(--ink-panel-2); }
+
+  .message {
+    font-size: 12px;
+    color: var(--crimson);
+    margin-top: 10px;
+    min-height: 14px;
+  }
+
+  .result {
+    margin-top: 26px;
+    padding-top: 24px;
+    border-top: 1px solid var(--gold-dim);
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+
+  .result.visible { opacity: 1; transform: translateY(0); }
+
+  .reel {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+
+  .reel strong { color: var(--gold); }
+
+  .appearance {
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 1.45;
+    color: var(--parchment);
+    margin: 0 0 18px;
+    min-height: 1.45em;
+  }
+
+  .effect-label {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 6px;
+  }
+
+  .effect {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--crimson);
+    margin: 0;
+    min-height: 1.3em;
+  }
+
+  .footnote {
+    margin-top: 30px;
+    font-size: 11.5px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .result { transition: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <p class="eyebrow">D100 Table</p>
+    <h1>The Shuffled Ledger</h1>
+    <p class="lede">Paste your table once, or load it from a file. From then on, give it a number — the ledger reshuffles itself and reveals whatever lands in that spot.</p>
+
+    <div id="setup-empty">
+      <label for="table-input">Your table (JSON array)</label>
+      <textarea id="table-input" placeholder='[
+  {&quot;id&quot;: 1, &quot;appearance&quot;: &quot;Something bad happened&quot;, &quot;Effect&quot;: &quot;1d6 damage&quot;},
+  {&quot;id&quot;: 2, &quot;appearance&quot;: &quot;...&quot;, &quot;Effect&quot;: &quot;...&quot;},
+  ...
+  {&quot;id&quot;: 100, &quot;appearance&quot;: &quot;...&quot;, &quot;Effect&quot;: &quot;...&quot;}
+]'></textarea>
+      <div class="row" style="margin-top:10px;">
+        <button class="btn btn-primary" id="save-btn">Save table</button>
+        <button class="btn" id="file-btn">Load from file…</button>
+        <input type="file" id="file-input" accept=".json,application/json" style="display:none">
+      </div>
+      <p class="message" id="setup-message"></p>
+    </div>
+
+    <div id="setup-loaded" style="display:none;">
+      <div class="summary-bar">
+        <span><strong id="entry-count">0</strong> entries on the ledger</span>
+        <button class="link-btn" id="edit-btn">Edit</button>
+      </div>
+    </div>
+
+    <hr>
+
+    <label for="roll-input">Enter a number</label>
+    <div class="row">
+      <input type="number" id="roll-input" class="roll-input" min="1" max="100" placeholder="—" disabled>
+      <button class="die-btn" id="random-btn" title="Pick a random number for me" aria-label="Pick a random number">⚄</button>
+      <button class="btn btn-primary" id="roll-btn" disabled>Reveal</button>
+    </div>
+    <p class="message" id="roll-message"></p>
+
+    <div class="result" id="result">
+      <p class="reel">position <strong id="reel-position">—</strong> → entry <strong id="reel-number">—</strong></p>
+      <p class="appearance" id="result-appearance"></p>
+      <p class="effect-label">Effect</p>
+      <p class="effect" id="result-effect"></p>
+    </div>
+
+    <p class="footnote">Every reveal reshuffles the whole ledger first, so the same number won't point to the same entry twice. If a file named <code>csvjson.json</code> sits in the same folder as this page on a server, it loads automatically — otherwise your last saved table loads instead.</p>
+  </div>
+
+<script>
+  const state = { entries: [] };
+
+  const setupEmpty = document.getElementById('setup-empty');
+  const setupLoaded = document.getElementById('setup-loaded');
+  const tableInput = document.getElementById('table-input');
+  const saveBtn = document.getElementById('save-btn');
+  const fileBtn = document.getElementById('file-btn');
+  const fileInput = document.getElementById('file-input');
+  const setupMessage = document.getElementById('setup-message');
+  const entryCount = document.getElementById('entry-count');
+  const editBtn = document.getElementById('edit-btn');
+
+  const rollInput = document.getElementById('roll-input');
+  const rollBtn = document.getElementById('roll-btn');
+  const randomBtn = document.getElementById('random-btn');
+  const rollMessage = document.getElementById('roll-message');
+
+  const resultEl = document.getElementById('result');
+  const reelPosition = document.getElementById('reel-position');
+  const reelNumber = document.getElementById('reel-number');
+  const resultAppearance = document.getElementById('result-appearance');
+  const resultEffect = document.getElementById('result-effect');
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function getField(obj, keys) {
+    for (const k of keys) {
+      if (obj[k] !== undefined && obj[k] !== null && obj[k] !== '') return obj[k];
+    }
+    return undefined;
+  }
+
+  function lenientParse(text) {
+    const cleaned = text.trim();
+    try { return JSON.parse(cleaned); } catch (e) {}
+    let fixed = cleaned.replace(/([{,]\s*)([A-Za-z_][A-Za-z0-9_]*)\s*:/g, '$1"$2":');
+    fixed = fixed.replace(/,(\s*[}\]])/g, '$1');
+    return JSON.parse(fixed);
+  }
+
+  function normalize(raw) {
+    if (!Array.isArray(raw)) throw new Error('not-array');
+    return raw.map((item, i) => ({
+      id: getField(item, ['id', 'Id', 'ID']) ?? (i + 1),
+      appearance: getField(item, ['appearance', 'Appearance']) ?? '—',
+      effect: getField(item, ['Effect', 'effect']) ?? '—'
+    }));
+  }
+
+  function applyTable(entries, opts = {}) {
+    state.entries = entries;
+    entryCount.textContent = entries.length;
+    setupEmpty.style.display = 'none';
+    setupLoaded.style.display = 'block';
+    rollInput.max = entries.length;
+    rollInput.disabled = entries.length === 0;
+    rollBtn.disabled = entries.length === 0;
+    if (!opts.silent) setupMessage.textContent = '';
+  }
+
+  const storageAPI = (typeof window.storage !== 'undefined') ? window.storage : {
+    async get(key) {
+      try {
+        const v = localStorage.getItem(key);
+        return v === null ? null : { key, value: v };
+      } catch (e) {
+        return null;
+      }
+    },
+    async set(key, value) {
+      try {
+        localStorage.setItem(key, value);
+        return { key, value };
+      } catch (e) {
+        return null;
+      }
+    }
+  };
+
+  async function loadSaved() {
+    try {
+      const res = await storageAPI.get('shuffled-ledger-table');
+      if (res && res.value) {
+        const parsed = normalize(JSON.parse(res.value));
+        applyTable(parsed, { silent: true });
+      }
+    } catch (e) {
+      // nothing saved yet — leave the empty editor showing
+    }
+  }
+
+  async function persist(entries) {
+    try {
+      await storageAPI.set('shuffled-ledger-table', JSON.stringify(entries));
+    } catch (e) {
+      console.error('storage save failed', e);
+    }
+  }
+
+  saveBtn.addEventListener('click', async () => {
+    setupMessage.textContent = '';
+    if (!tableInput.value.trim()) {
+      setupMessage.textContent = 'Paste your table first.';
+      return;
+    }
+    let raw;
+    try {
+      raw = lenientParse(tableInput.value);
+    } catch (e) {
+      setupMessage.textContent = 'Could not read that as a JSON array — check for a missing bracket or comma.';
+      return;
+    }
+    let entries;
+    try {
+      entries = normalize(raw);
+    } catch (e) {
+      setupMessage.textContent = 'Expected a JSON array of entries, like [{"id":1,...}, ...].';
+      return;
+    }
+    applyTable(entries);
+    await persist(entries);
+  });
+
+  fileBtn.addEventListener('click', () => fileInput.click());
+
+  fileInput.addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    setupMessage.textContent = '';
+    let text;
+    try {
+      text = await file.text();
+    } catch (err) {
+      setupMessage.textContent = 'Could not read that file.';
+      fileInput.value = '';
+      return;
+    }
+    tableInput.value = text;
+    let raw;
+    try {
+      raw = lenientParse(text);
+    } catch (err) {
+      setupMessage.textContent = 'Could not read that file as a JSON array — check for a missing bracket or comma.';
+      fileInput.value = '';
+      return;
+    }
+    let entries;
+    try {
+      entries = normalize(raw);
+    } catch (err) {
+      setupMessage.textContent = 'Expected a JSON array of entries, like [{"id":1,...}, ...].';
+      fileInput.value = '';
+      return;
+    }
+    applyTable(entries);
+    await persist(entries);
+    fileInput.value = '';
+  });
+
+  editBtn.addEventListener('click', () => {
+    tableInput.value = JSON.stringify(state.entries, null, 2);
+    setupLoaded.style.display = 'none';
+    setupEmpty.style.display = 'block';
+  });
+
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function revealResult(entry, position) {
+    reelPosition.textContent = position;
+    reelNumber.textContent = String(entry.id).padStart(3, '0');
+    resultAppearance.textContent = entry.appearance;
+    resultEffect.textContent = entry.effect;
+    resultEl.classList.add('visible');
+    rollBtn.disabled = false;
+  }
+
+  function animateRoll(entry, position) {
+    rollBtn.disabled = true;
+    reelPosition.textContent = position;
+    resultAppearance.textContent = '';
+    resultEffect.textContent = '';
+    resultEl.classList.add('visible');
+
+    if (reduceMotion || state.entries.length < 3) {
+      revealResult(entry, position);
+      return;
+    }
+
+    let ticks = 0;
+    const totalTicks = 14;
+    let delay = 35;
+    function tick() {
+      ticks++;
+      const rand = state.entries[Math.floor(Math.random() * state.entries.length)];
+      reelNumber.textContent = String(rand.id).padStart(3, '0');
+      if (ticks < totalTicks) {
+        delay *= 1.15;
+        setTimeout(tick, delay);
+      } else {
+        revealResult(entry, position);
+      }
+    }
+    tick();
+  }
+
+  function handleRoll() {
+    rollMessage.textContent = '';
+    if (!state.entries.length) {
+      rollMessage.textContent = 'Save your table first.';
+      return;
+    }
+    const n = parseInt(rollInput.value, 10);
+    if (!Number.isInteger(n) || n < 1 || n > state.entries.length) {
+      rollMessage.textContent = `Enter a whole number between 1 and ${state.entries.length}.`;
+      return;
+    }
+    const shuffled = shuffle(state.entries);
+    const picked = shuffled[n - 1];
+    animateRoll(picked, n);
+  }
+
+  rollBtn.addEventListener('click', handleRoll);
+  rollInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') handleRoll();
+  });
+  randomBtn.addEventListener('click', () => {
+    const max = state.entries.length || 100;
+    rollInput.value = 1 + Math.floor(Math.random() * max);
+  });
+
+  async function tryFetchHostFile() {
+    try {
+      const res = await fetch('csvjson.json', { cache: 'no-store' });
+      if (!res.ok) return null;
+      const text = await res.text();
+      return normalize(lenientParse(text));
+    } catch (e) {
+      return null; // not hosted alongside the page, or opened as a local file — fall back below
+    }
+  }
+
+  async function init() {
+    const fetched = await tryFetchHostFile();
+    if (fetched) {
+      applyTable(fetched, { silent: true });
+      await persist(fetched);
+      return;
+    }
+    await loadSaved();
+  }
+
+  init();
+</script>
+</body>
+</html>
