@@ -2,501 +2,1001 @@
   {
     "id": 1,
     "appearance": "The item temporarily doubles in weight.",
-    "Effect": "Movement speed reduced by 10 ft until the next short rest."
+    "effect": "Movement speed reduced by 10 ft until the next short rest."
   },
   {
     "id": 2,
     "appearance": "The light around the character briefly dims.",
-    "Effect": "Blinded until the end of the next turn."
+    "effect": "Blinded until the end of the next turn."
   },
   {
     "id": 3,
     "appearance": "A surge of temporary strength courses through the muscles.",
-    "Effect": "Until the next short rest  +2 to one ability score of your choice."
+    "effect": "Until the next short rest  +2 to one ability score of your choice."
   },
   {
     "id": 4,
     "appearance": "A faint ringing echoes in the ears.",
-    "Effect": "Disadvantage on Perception (hearing) until the end of the next short rest."
+    "effect": "Disadvantage on Perception (hearing) until the end of the next short rest."
   },
   {
     "id": 5,
     "appearance": "The item tolls like a death bell that only you can hear.",
-    "Effect": "Wisdom save DC 15 or become severely Frightened until the end of the scene (cannot willingly move closer to the source of fear)."
+    "effect": "Wisdom save DC 15 or become severely Frightened until the end of the scene (cannot willingly move closer to the source of fear)."
   },
   {
     "id": 6,
     "appearance": "The item briefly disguises its true form.",
-    "Effect": "For 1 hour  the item appears as something else to others (minor illusion curse)."
+    "effect": "For 1 hour  the item appears as something else to others (minor illusion curse)."
   },
   {
     "id": 7,
     "appearance": "A small",
-    "Effect": "harmless spark flies off the item. Makes a loud noise; every creature within 30 ft becomes aware of your location."
+    "effect": "harmless spark flies off the item. Makes a loud noise; every creature within 30 ft becomes aware of your location."
   },
   {
     "id": 8,
     "appearance": "A permanent black mark",
-    "Effect": "like rotted veins  appears on the skin near where the item touched. Permanent minor curse: Disadvantage on one ability score (GM's choice) until Remove Curse."
+    "effect": "like rotted veins  appears on the skin near where the item touched. Permanent minor curse: Disadvantage on one ability score (GM's choice) until Remove Curse."
   },
   {
     "id": 9,
     "appearance": "The item briefly freezes over.",
-    "Effect": "1d4 cold damage and speed drops to 0 until your next turn."
+    "effect": "1d4 cold damage and speed drops to 0 until your next turn."
   },
   {
     "id": 10,
     "appearance": "The character briefly loses control of their body.",
-    "Effect": "Wisdom save DC 15 or suffer Confusion for 1 turn."
+    "effect": "Wisdom save DC 15 or suffer Confusion for 1 turn."
   },
   {
     "id": 11,
     "appearance": "A permanent whisper begins in your mind that never fully stops.",
-    "Effect": "Until Remove Curse  make a DC 12 Wisdom save each night or long rests provide no benefit (Exhaustion isn't removed)."
+    "effect": "Until Remove Curse  make a DC 12 Wisdom save each night or long rests provide no benefit (Exhaustion isn't removed)."
   },
   {
     "id": 12,
     "appearance": "The item gives off a brief spark of electricity.",
-    "Effect": "1d4 lightning damage to yourself."
+    "effect": "1d4 lightning damage to yourself."
   },
   {
     "id": 13,
     "appearance": "The character's blood briefly changes color.",
-    "Effect": "3d6 necrotic damage  and maximum HP is reduced by the same amount until a long rest."
+    "effect": "3d6 necrotic damage  and maximum HP is reduced by the same amount until a long rest."
   },
   {
     "id": 14,
     "appearance": "The item becomes violently hot.",
-    "Effect": "3d6 fire damage to the holding hand; if not empty-handed  it may be dropped (DC 13 Con save)."
+    "effect": "3d6 fire damage to the holding hand; if not empty-handed  it may be dropped (DC 13 Con save)."
   },
   {
     "id": 15,
     "appearance": "The item releases deep dark energy that lingers in the body.",
-    "Effect": "Maximum HP is permanently reduced by 2d6 until Greater Restoration."
+    "effect": "Maximum HP is permanently reduced by 2d6 until Greater Restoration."
   },
   {
     "id": 16,
     "appearance": "The character's memory briefly glitches.",
-    "Effect": "You forget the last spell cast or action taken (narrative effect  no forced mechanic)."
+    "effect": "You forget the last spell cast or action taken (narrative effect  no forced mechanic)."
   },
   {
     "id": 17,
     "appearance": "The item grows hotter than usual and emits black smoke.",
-    "Effect": "2d6 fire damage  and a small fire starts within 5 ft."
+    "effect": "2d6 fire damage  and a small fire starts within 5 ft."
   },
   {
     "id": 18,
     "appearance": "The item briefly grants mental clarity.",
-    "Effect": "Immune to Charmed and Frightened until the end of the next short rest."
+    "effect": "Immune to Charmed and Frightened until the end of the next short rest."
   },
   {
     "id": 19,
     "appearance": "A raw",
-    "Effect": "unstable burst of energy erupts from the item. 4d10 force damage to yourself  half of that to the nearest ally (if any)."
+    "effect": "unstable burst of energy erupts from the item. 4d10 force damage to yourself  half of that to the nearest ally (if any)."
   },
   {
     "id": 20,
     "appearance": "The character's body heats up from within.",
-    "Effect": "2d4 fire damage."
+    "effect": "2d4 fire damage."
   },
   {
     "id": 21,
     "appearance": "The item glows unsettlingly and smokes.",
-    "Effect": "2d6 posion damage."
+    "effect": "2d6 posion damage."
   },
   {
     "id": 22,
     "appearance": "The item gives off a dark spark.",
-    "Effect": "Disadvantage on attack rolls until the end of the next turn  even in full light."
+    "effect": "Disadvantage on attack rolls until the end of the next turn  even in full light."
   },
   {
     "id": 23,
     "appearance": "The item briefly points toward an unknown target.",
-    "Effect": "You are forced to move toward the nearest creature (friend or foe) on your next turn."
+    "effect": "You are forced to move toward the nearest creature (friend or foe) on your next turn."
   },
   {
     "id": 24,
     "appearance": "The item becomes permanently shinier and more beautiful.",
-    "Effect": "The item permanently gains +1 to its main bonus (if it's a magic weapon/armor)."
+    "effect": "The item permanently gains +1 to its main bonus (if it's a magic weapon/armor)."
   },
   {
     "id": 25,
     "appearance": "The item briefly glows gold.",
-    "Effect": "The next 1d6 uses of the item will not count toward triggering a negative effect."
+    "effect": "The next 1d6 uses of the item will not count toward triggering a negative effect."
   },
   {
     "id": 26,
     "appearance": "A whisper echoes in your head: \"More... more.",
-    "Effect": "Wisdom save DC 13 or you are compelled to spend your next turn using the item again."
+    "effect": "Wisdom save DC 13 or you are compelled to spend your next turn using the item again."
   },
   {
     "id": 27,
     "appearance": "A soothing light shines from the item.",
-    "Effect": "You and each ally within 10 ft gain Advantage on their next saving throw."
+    "effect": "You and each ally within 10 ft gain Advantage on their next saving throw."
   },
   {
     "id": 28,
     "appearance": "A dark spark shoots out of the item.",
-    "Effect": "1d8 necrotic damage  and maximum HP is reduced by the same amount until a long rest."
+    "effect": "1d8 necrotic damage  and maximum HP is reduced by the same amount until a long rest."
   },
   {
     "id": 29,
     "appearance": "The item briefly becomes lighter than air.",
-    "Effect": "Until the end of your next turn  you may float/hover 10 ft without using movement."
+    "effect": "Until the end of your next turn  you may float/hover 10 ft without using movement."
   },
   {
     "id": 30,
     "appearance": "A fleeting shadow slips out of the item.",
-    "Effect": "Wisdom save DC 13 or become Frightened until the end of the next short rest."
+    "effect": "Wisdom save DC 13 or become Frightened until the end of the next short rest."
   },
   {
     "id": 31,
     "appearance": "The character's eyes briefly go black.",
-    "Effect": "Blinded until the start of your next turn."
+    "effect": "Blinded until the start of your next turn."
   },
   {
     "id": 32,
     "appearance": "The item shakes violently once.",
-    "Effect": "Make a DC 13 Concentration check or your current spell is disrupted."
+    "effect": "Make a DC 13 Concentration check or your current spell is disrupted."
   },
   {
     "id": 33,
     "appearance": "A small burst of dark energy erupts from the item.",
-    "Effect": "3d8 necrotic damage in a 5 ft radius around yourself (including yourself)."
+    "effect": "3d8 necrotic damage in a 5 ft radius around yourself (including yourself)."
   },
   {
     "id": 34,
     "appearance": "The item absorbs dark energy that then bursts outward.",
-    "Effect": "All allied creatures within 15 ft take 2d6 necrotic damage."
+    "effect": "All allied creatures within 15 ft take 2d6 necrotic damage."
   },
   {
     "id": 35,
     "appearance": "A small part of the body (finger",
-    "Effect": "hair  nail) turns oddly black and numb. Permanent loss of touch sensation in that area; narrative effect + minor Disadvantage on Sleight of Hand."
+    "effect": "hair  nail) turns oddly black and numb. Permanent loss of touch sensation in that area; narrative effect + minor Disadvantage on Sleight of Hand."
   },
   {
     "id": 36,
     "appearance": "The item emits a wolf's howl.",
-    "Effect": "The nearest monster group or enemy patrol in the area is drawn toward you (GM's discretion)."
+    "effect": "The nearest monster group or enemy patrol in the area is drawn toward you (GM's discretion)."
   },
   {
     "id": 37,
     "appearance": "The item miraculously revives the character.",
-    "Effect": "If HP is below half  you are immediately restored to full HP; otherwise  remove one level of Exhaustion."
+    "effect": "If HP is below half  you are immediately restored to full HP; otherwise  remove one level of Exhaustion."
   },
   {
     "id": 38,
     "appearance": "Black veins appear on the item and won't wash off.",
-    "Effect": "Curse: Until Remove Curse  roll a d4 before each attack; on a 1  the attack targets the nearest creature (even an ally)."
+    "effect": "Curse: Until Remove Curse  roll a d4 before each attack; on a 1  the attack targets the nearest creature (even an ally)."
   },
   {
     "id": 39,
     "appearance": "The item gives off a pleasant warmth for a while.",
-    "Effect": "Resistance to one damage type (GM's choice or random) until the next long rest."
+    "effect": "Resistance to one damage type (GM's choice or random) until the next long rest."
   },
   {
     "id": 40,
     "appearance": "The item briefly becomes heavier.",
-    "Effect": "Strength save DC 12 or fall Prone."
+    "effect": "Strength save DC 12 or fall Prone."
   },
   {
     "id": 41,
     "appearance": "The item lets out a scream.",
-    "Effect": "Every creature within 30 ft becomes aware of your location  and you must make a DC 12 Con save or be Deafened until the end of the scene."
+    "effect": "Every creature within 30 ft becomes aware of your location  and you must make a DC 12 Con save or be Deafened until the end of the scene."
   },
   {
     "id": 42,
     "appearance": "The item heats up and lightly burns.",
-    "Effect": "1d6 fire damage to the holding hand."
+    "effect": "1d6 fire damage to the holding hand."
   },
   {
     "id": 43,
     "appearance": "A thin line of blood trickles from the nose or ear.",
-    "Effect": "2d6 necrotic damage."
+    "effect": "2d6 necrotic damage."
   },
   {
     "id": 44,
     "appearance": "The item briefly feels cursed (minor curse).",
-    "Effect": "Until the next long rest  subtract 1d4 from all attack rolls and saving throws."
+    "effect": "Until the next long rest  subtract 1d4 from all attack rolls and saving throws."
   },
   {
     "id": 45,
     "appearance": "The character's eyes briefly change color.",
-    "Effect": "Disadvantage on Charisma saving throws for the rest of the day."
+    "effect": "Disadvantage on Charisma saving throws for the rest of the day."
   },
   {
     "id": 46,
     "appearance": "A dark rift briefly opens nearby.",
-    "Effect": "A small dark creature (e.g.  a Shadow or weaker equivalent) is summoned and is hostile (CR 1/2).) (gm roll d4 on odd its hostile on even is friendly)"
+    "effect": "A small dark creature (e.g.  a Shadow or weaker equivalent) is summoned and is hostile (CR 1/2).) (gm roll d4 on odd its hostile on even is friendly)"
   },
   {
     "id": 47,
     "appearance": "A cracking sound comes from the character's bones.",
-    "Effect": "One hand has Disadvantage on all checks and attacks until the next long rest."
+    "effect": "One hand has Disadvantage on all checks and attacks until the next long rest."
   },
   {
     "id": 48,
     "appearance": "The item temporarily loses part of its power.",
-    "Effect": "Until the next long rest  one of the item's main abilities is disabled."
+    "effect": "Until the next long rest  one of the item's main abilities is disabled."
   },
   {
     "id": 49,
     "appearance": "A drop of blood drips from the character's nose.",
-    "Effect": "1d4 necrotic damage."
+    "effect": "1d4 necrotic damage."
   },
   {
     "id": 50,
     "appearance": "The item radiates negative energy.",
-    "Effect": "All allied creatures within 10 ft take 1d4 necrotic damage."
+    "effect": "All allied creatures within 10 ft take 1d4 necrotic damage."
   },
   {
     "id": 51,
     "appearance": "The item reveals its true nature: an artifact more powerful than you thought.",
-    "Effect": "The item permanently gains a new  powerful ability (designed with the GM) or a major story milestone for the campaign."
+    "effect": "The item permanently gains a new  powerful ability (designed with the GM) or a major story milestone for the campaign."
   },
   {
     "id": 52,
     "appearance": "The character's veins briefly turn black.",
-    "Effect": "Constitution save DC 13 or be Poisoned until the end of the next short rest."
+    "effect": "Constitution save DC 13 or be Poisoned until the end of the next short rest."
   },
   {
     "id": 53,
     "appearance": "The item briefly turns cold.",
-    "Effect": "Movement speed reduced by 5 ft until the end of the scene."
+    "effect": "Movement speed reduced by 5 ft until the end of the scene."
   },
   {
     "id": 54,
     "appearance": "An extra heartbeat is felt in the chest.",
-    "Effect": "Gain 1 level of Exhaustion."
+    "effect": "Gain 1 level of Exhaustion."
   },
   {
     "id": 55,
     "appearance": "A brief stench of decay rises from the item.",
-    "Effect": "Every creature within 10 ft must make a DC 10 Con save or be Poisoned until the start of their next turn."
+    "effect": "Every creature within 10 ft must make a DC 10 Con save or be Poisoned until the start of their next turn."
   },
   {
     "id": 56,
     "appearance": "The item becomes cold and slippery for a while.",
-    "Effect": "Make a DC 13 Dexterity save or the item is thrown 10 ft away."
+    "effect": "Make a DC 13 Dexterity save or the item is thrown 10 ft away."
   },
   {
     "id": 57,
     "appearance": "The item briefly reveals its true (possibly monstrous) form.",
-    "Effect": "Every nearby creature must make a DC 12 Wisdom save or be Frightened until the end of the next turn."
+    "effect": "Every nearby creature must make a DC 12 Wisdom save or be Frightened until the end of the next turn."
   },
   {
     "id": 58,
     "appearance": "A wave of dark energy passes through the character's body.",
-    "Effect": "Constitution save DC 14 or be Poisoned until the next long rest."
+    "effect": "Constitution save DC 14 or be Poisoned until the next long rest."
   },
   {
     "id": 59,
     "appearance": "An unintelligible whisper is heard from the item.",
-    "Effect": "Wisdom save DC 12 or be Frightened until the end of the next turn."
+    "effect": "Wisdom save DC 12 or be Frightened until the end of the next turn."
   },
   {
     "id": 60,
     "appearance": "The item temporarily binds itself to the character.",
-    "Effect": "You cannot voluntarily drop or give away the item for 24 hours (curse)."
+    "effect": "You cannot voluntarily drop or give away the item for 24 hours (curse)."
   },
   {
     "id": 61,
     "appearance": "The character's knees briefly buckle.",
-    "Effect": "Dexterity save DC 12 or fall Prone."
+    "effect": "Dexterity save DC 12 or fall Prone."
   },
   {
     "id": 62,
     "appearance": "A strange smell rises from the item that only animals can detect.",
-    "Effect": "For the rest of the day  wild animals are Hostile toward you or flee."
+    "effect": "For the rest of the day  wild animals are Hostile toward you or flee."
   },
   {
     "id": 63,
     "appearance": "The item briefly heats up but doesn't burn.",
-    "Effect": "1d4 fire damage."
+    "effect": "1d4 fire damage."
   },
   {
     "id": 64,
     "appearance": "The item heats up to the point of partial melting.",
-    "Effect": "4d6 fire damage  and if the item is non-magical it may suffer permanent damage (broken or flawed)."
+    "effect": "4d6 fire damage  and if the item is non-magical it may suffer permanent damage (broken or flawed)."
   },
   {
     "id": 65,
     "appearance": "The item briefly becomes lighter and more comfortable to hold.",
-    "Effect": "Until the next short rest  Advantage on an ability check related to the item's type."
+    "effect": "Until the next short rest  Advantage on an ability check related to the item's type."
   },
   {
     "id": 66,
     "appearance": "The item shakes and howls briefly in your hand.",
-    "Effect": "The nearest enemy within 60 ft becomes aware of your exact location."
+    "effect": "The nearest enemy within 60 ft becomes aware of your exact location."
   },
   {
     "id": 67,
     "appearance": "The item briefly opens a portal to a dark creature from another world.",
-    "Effect": "A Shadow or Specter (depending on campaign tier) is summoned  hostile Gm roll d4 and on even is hostile and on odd is frendly  until defeated or 1 minute passes."
+    "effect": "A Shadow or Specter (depending on campaign tier) is summoned  hostile Gm roll d4 and on even is hostile and on odd is frendly  until defeated or 1 minute passes."
   },
   {
     "id": 68,
     "appearance": "An old wound (if the character has one) reopens",
-    "Effect": "otherwise a sudden cut appears. 2d8 slashing damage."
+    "effect": "otherwise a sudden cut appears. 2d8 slashing damage."
   },
   {
     "id": 69,
     "appearance": "The item temporarily summons a guardian spirit.",
-    "Effect": "A small friendly creature (like a weak Spiritual Weapon) assists you for 1 turn."
+    "effect": "A small friendly creature (like a weak Spiritual Weapon) assists you for 1 turn."
   },
   {
     "id": 70,
     "appearance": "Strange lines appear on the skin near the item and then fade.",
-    "Effect": "1d6 necrotic damage."
+    "effect": "1d6 necrotic damage."
   },
   {
     "id": 71,
     "appearance": "The item smells faintly of sulfur for a few seconds — harmless.",
-    "Effect": "No effect (false alarm)."
+    "effect": "No effect (false alarm)."
   },
   {
     "id": 72,
     "appearance": "A dazzling",
-    "Effect": "beautiful light envelops the item. All current negative effects/curses on the character are immediately cured."
+    "effect": "beautiful light envelops the item. All current negative effects/curses on the character are immediately cured."
   },
   {
     "id": 73,
     "appearance": "A sinister laugh is heard from the item.",
-    "Effect": "Wisdom save DC 14 or become Frightened of the item itself for the rest of the day (cannot voluntarily use it)."
+    "effect": "Wisdom save DC 14 or become Frightened of the item itself for the rest of the day (cannot voluntarily use it)."
   },
   {
     "id": 74,
     "appearance": "A warm golden light fully envelops the body.",
-    "Effect": "Regain 4d8 HP."
+    "effect": "Regain 4d8 HP."
   },
   {
     "id": 75,
     "appearance": "The item makes a strange alarm sound.",
-    "Effect": "A random encounter occurs earlier than expected (GM's discretion)."
+    "effect": "A random encounter occurs earlier than expected (GM's discretion)."
   },
   {
     "id": 76,
     "appearance": "The item glows for a while and radiates positive energy.",
-    "Effect": "Once  you may reroll one failed saving throw (until the next short rest)."
+    "effect": "Once  you may reroll one failed saving throw (until the next short rest)."
   },
   {
     "id": 77,
     "appearance": "The item smells of blood.",
-    "Effect": "The nearest undead or predator within half a mile senses your direction."
+    "effect": "The nearest undead or predator within half a mile senses your direction."
   },
   {
     "id": 78,
     "appearance": "One of the character's eyes permanently changes color slightly.",
-    "Effect": "One sense (smell or hearing) becomes weaker; permanent Disadvantage on related Perception checks until Greater Restoration."
+    "effect": "One sense (smell or hearing) becomes weaker; permanent Disadvantage on related Perception checks until Greater Restoration."
   },
   {
     "id": 79,
     "appearance": "The item briefly plays a soft tune.",
-    "Effect": "Any current Frightened or Charmed effect on you (if any) ends immediately."
+    "effect": "Any current Frightened or Charmed effect on you (if any) ends immediately."
   },
   {
     "id": 80,
     "appearance": "The item permanently develops a small stain or crack.",
-    "Effect": "The item permanently loses 1 to its AC or related bonus (quality degrades) until professionally repaired."
+    "effect": "The item permanently loses 1 to its AC or related bonus (quality degrades) until professionally repaired."
   },
   {
     "id": 81,
     "appearance": "The character's face briefly shifts shape (illusion).",
-    "Effect": "Disadvantage on all Charisma checks and saves until the end of the next short rest."
+    "effect": "Disadvantage on all Charisma checks and saves until the end of the next short rest."
   },
   {
     "id": 82,
     "appearance": "A cracking bone sound is heard (fake).",
-    "Effect": "1d4 bludgeoning damage and Disadvantage on your next turn."
+    "effect": "1d4 bludgeoning damage and Disadvantage on your next turn."
   },
   {
     "id": 83,
     "appearance": "The wrist briefly goes numb.",
-    "Effect": "Disadvantage on attack rolls and ability checks with that hand until your next turn."
+    "effect": "Disadvantage on attack rolls and ability checks with that hand until your next turn."
   },
   {
     "id": 84,
     "appearance": "A sudden flash of insight strikes the character.",
-    "Effect": "Once during the scene  gain Advantage on an Insight or Investigation check."
+    "effect": "Once during the scene  gain Advantage on an Insight or Investigation check."
   },
   {
     "id": 85,
     "appearance": "A permanent protective aura forms around the character.",
-    "Effect": "Once per day  you may ignore one incoming attack (like a weak  permanent Shield of Faith  until triggered)."
+    "effect": "Once per day  you may ignore one incoming attack (like a weak  permanent Shield of Faith  until triggered)."
   },
   {
     "id": 86,
     "appearance": "The item vibrates slightly.",
-    "Effect": "Make a DC 10 Concentration check or any ongoing Concentration is broken."
+    "effect": "Make a DC 10 Concentration check or any ongoing Concentration is broken."
   },
   {
     "id": 87,
     "appearance": "The character's eyes briefly turn completely black.",
-    "Effect": "Disadvantage on all Wisdom (Perception) checks until the end of the next short rest."
+    "effect": "Disadvantage on all Wisdom (Perception) checks until the end of the next short rest."
   },
   {
     "id": 88,
     "appearance": "The item briefly summons a spirit from its past that is confusing but not hostile.",
-    "Effect": "A ghostly NPC appears  speaks for 1 minute (information or riddle from the GM)  then vanishes."
+    "effect": "A ghostly NPC appears  speaks for 1 minute (information or riddle from the GM)  then vanishes."
   },
   {
     "id": 89,
     "appearance": "The character's hand goes numb.",
-    "Effect": "Until the end of your next turn  your weapon or item is dropped."
+    "effect": "Until the end of your next turn  your weapon or item is dropped."
   },
   {
     "id": 90,
     "appearance": "The item briefly appears completely lifeless and dead.",
-    "Effect": "Until the next long rest  all of the item's magical abilities are disabled."
+    "effect": "Until the next long rest  all of the item's magical abilities are disabled."
   },
   {
     "id": 91,
     "appearance": "A temporary silver aura forms around the item.",
-    "Effect": "+1 to AC until the end of the scene."
+    "effect": "+1 to AC until the end of the scene."
   },
   {
     "id": 92,
     "appearance": "A faint light shines from the item and won't go out.",
-    "Effect": "You cannot become Hidden for the rest of the day (dim light in a 5 ft radius)."
+    "effect": "You cannot become Hidden for the rest of the day (dim light in a 5 ft radius)."
   },
   {
     "id": 93,
     "appearance": "The item briefly turns invisible.",
-    "Effect": "Make a DC 10 Perception check or you lose track of the item (until you search for it)."
+    "effect": "Make a DC 10 Perception check or you lose track of the item (until you search for it)."
   },
   {
     "id": 94,
     "appearance": "The item briefly becomes translucent.",
-    "Effect": "One random ability of the item (if magical) is disabled until the next long rest."
+    "effect": "One random ability of the item (if magical) is disabled until the next long rest."
   },
   {
     "id": 95,
     "appearance": "The character's face loses color.",
-    "Effect": "1 level of Exhaustion."
+    "effect": "1 level of Exhaustion."
   },
   {
     "id": 96,
     "appearance": "The hands briefly tremble.",
-    "Effect": "Disadvantage on all Dexterity-based checks until the next short rest."
+    "effect": "Disadvantage on all Dexterity-based checks until the next short rest."
   },
   {
     "id": 97,
     "appearance": "The item briefly seems to come alive and \"thanks\" you.",
-    "Effect": "The item permanently gains a new minor positive trait (GM's discretion  e.g. +1 to a type of check)."
+    "effect": "The item permanently gains a new minor positive trait (GM's discretion  e.g. +1 to a type of check)."
   },
   {
     "id": 98,
     "appearance": "The item's color briefly fades.",
-    "Effect": "Disadvantage on Persuasion and Deception until the next short rest."
+    "effect": "Disadvantage on Persuasion and Deception until the next short rest."
   },
   {
     "id": 99,
     "appearance": "The character's tongue briefly ties itself in a knot.",
-    "Effect": "Until the end of your next turn  you cannot speak verbal spell components."
+    "effect": "Until the end of your next turn  you cannot speak verbal spell components."
   },
   {
     "id": 100,
     "appearance": "A pleasant warmth spreads through the body.",
-    "Effect": "Regain 2d6 HP."
+    "effect": "Regain 2d6 HP."
+  },
+  {
+    "id": 101,
+    "appearance": "The item briefly whispers your name in a voice you don't recognize.",
+    "effect": "Wisdom save DC 13 or have Disadvantage on your next saving throw."
+  },
+  {
+    "id": 102,
+    "appearance": "A ring of pale fire circles the item without burning it.",
+    "effect": "The next creature that hits you with a melee attack takes 1d6 fire damage."
+  },
+  {
+    "id": 103,
+    "appearance": "The item briefly pulls toward the ground.",
+    "effect": "Strength save DC 13 or be Restrained until the end of your next turn."
+  },
+  {
+    "id": 104,
+    "appearance": "A tiny black moth emerges from the item and vanishes.",
+    "effect": "You have Advantage on your next Stealth check, but the nearest hostile creature within 60 ft senses your direction."
+  },
+  {
+    "id": 105,
+    "appearance": "The item emits a cold breath.",
+    "effect": "You gain Resistance to cold damage until the end of your next turn."
+  },
+  {
+    "id": 106,
+    "appearance": "A pulse of energy runs through your weapon arm.",
+    "effect": "Your next weapon hit deals an extra 1d8 force damage."
+  },
+  {
+    "id": 107,
+    "appearance": "The item briefly reflects a possible future.",
+    "effect": "You may add 1d4 to your next attack roll or ability check."
+  },
+  {
+    "id": 108,
+    "appearance": "A dark bruise appears and immediately fades.",
+    "effect": "Take 1d6 necrotic damage, then gain Temporary HP equal to the damage taken."
+  },
+  {
+    "id": 109,
+    "appearance": "The item becomes unnaturally quiet.",
+    "effect": "Until the end of your next turn, you make no sound while moving."
+  },
+  {
+    "id": 110,
+    "appearance": "A faint red eye appears on the item.",
+    "effect": "You gain Darkvision 60 ft for 1 hour."
+  },
+  {
+    "id": 111,
+    "appearance": "The item suddenly becomes difficult to look at.",
+    "effect": "Creatures have Disadvantage on Perception checks made to observe you until the end of the scene."
+  },
+  {
+    "id": 112,
+    "appearance": "A sharp pain flashes through your chest.",
+    "effect": "Constitution save DC 13 or you cannot regain HP until the start of your next turn."
+  },
+  {
+    "id": 113,
+    "appearance": "A silver thread connects you to the item.",
+    "effect": "You cannot be moved against your will until the end of your next turn."
+  },
+  {
+    "id": 114,
+    "appearance": "The item briefly weighs nothing.",
+    "effect": "You gain Advantage on your next Athletics or Acrobatics check."
+  },
+  {
+    "id": 115,
+    "appearance": "A distant bell rings three times.",
+    "effect": "Each creature within 20 ft must succeed on a DC 12 Wisdom save or be unable to take Reactions until its next turn."
+  },
+  {
+    "id": 116,
+    "appearance": "The item releases a harmless cloud of black mist.",
+    "effect": "You are Heavily Obscured to creatures more than 10 ft away until the end of your next turn."
+  },
+  {
+    "id": 117,
+    "appearance": "A faint golden rune appears on your palm.",
+    "effect": "Gain +2 to your next death saving throw."
+  },
+  {
+    "id": 118,
+    "appearance": "The item suddenly feels alive.",
+    "effect": "Wisdom save DC 14 or you become Frightened until the end of your next turn."
+  },
+  {
+    "id": 119,
+    "appearance": "A spark jumps from the item to the nearest creature.",
+    "effect": "That creature takes 1d6 lightning damage."
+  },
+  {
+    "id": 120,
+    "appearance": "Your shadow briefly moves independently.",
+    "effect": "You gain Advantage on your next Intimidation check."
+  },
+  {
+    "id": 121,
+    "appearance": "The item gives off the smell of rain.",
+    "effect": "You regain 1d6 HP."
+  },
+  {
+    "id": 122,
+    "appearance": "A crack appears in the air beside the item.",
+    "effect": "Teleport up to 10 ft to an unoccupied space you can see."
+  },
+  {
+    "id": 123,
+    "appearance": "The item briefly absorbs nearby light.",
+    "effect": "You gain Advantage on your next attack made in dim light or darkness."
+  },
+  {
+    "id": 124,
+    "appearance": "A cold hand seems to touch your shoulder.",
+    "effect": "Wisdom save DC 12 or you are Frightened until the start of your next turn."
+  },
+  {
+    "id": 125,
+    "appearance": "The item hums with restrained power.",
+    "effect": "Your next spell that deals damage deals an extra 1d6 damage."
+  },
+  {
+    "id": 126,
+    "appearance": "A thin black line crawls across your skin.",
+    "effect": "Take 1d4 necrotic damage and gain Advantage on your next Constitution save."
+  },
+  {
+    "id": 127,
+    "appearance": "The item suddenly points toward the nearest source of magic.",
+    "effect": "You immediately learn the direction of the nearest magical creature or object within 120 ft."
+  },
+  {
+    "id": 128,
+    "appearance": "A flash of white light erupts.",
+    "effect": "All creatures within 10 ft must make a DC 12 Constitution save or be Blinded until the end of your next turn."
+  },
+  {
+    "id": 129,
+    "appearance": "The item briefly becomes transparent.",
+    "effect": "You gain Advantage on your next Investigation check."
+  },
+  {
+    "id": 130,
+    "appearance": "A low growl comes from nowhere.",
+    "effect": "The nearest hostile creature within 60 ft becomes aware of your presence."
+  },
+  {
+    "id": 131,
+    "appearance": "The item radiates soothing energy.",
+    "effect": "End one effect causing you to be Frightened or Poisoned."
+  },
+  {
+    "id": 132,
+    "appearance": "A small crack forms on the item.",
+    "effect": "Its wielder takes 1d6 psychic damage."
+  },
+  {
+    "id": 133,
+    "appearance": "The item suddenly pulls toward the nearest creature.",
+    "effect": "You may move 10 ft toward a creature you can see without provoking Opportunity Attacks."
+  },
+  {
+    "id": 134,
+    "appearance": "A strange warmth fills your hands.",
+    "effect": "Gain Advantage on your next attack roll made with the item."
+  },
+  {
+    "id": 135,
+    "appearance": "A voice offers a secret only you can hear.",
+    "effect": "You learn one useful but cryptic piece of information chosen by the GM."
+  },
+  {
+    "id": 136,
+    "appearance": "The item briefly becomes covered in frost.",
+    "effect": "Your next successful attack deals an extra 1d6 cold damage."
+  },
+  {
+    "id": 137,
+    "appearance": "A black spark enters your eye.",
+    "effect": "You gain Truesight 10 ft until the end of your next turn."
+  },
+  {
+    "id": 138,
+    "appearance": "The item pulses once like a heartbeat.",
+    "effect": "Gain 1d8 Temporary HP."
+  },
+  {
+    "id": 139,
+    "appearance": "A sudden wave of exhaustion hits you.",
+    "effect": "Your speed is reduced by 10 ft until the end of your next turn."
+  },
+  {
+    "id": 140,
+    "appearance": "The item briefly becomes impossibly sharp.",
+    "effect": "The next weapon attack you hit with deals an extra 1d8 slashing damage."
+  },
+  {
+    "id": 141,
+    "appearance": "A tiny portal opens and closes instantly.",
+    "effect": "One unattended Tiny object within 30 ft teleports to your hand."
+  },
+  {
+    "id": 142,
+    "appearance": "The item emits a pleasant chime.",
+    "effect": "One ally within 30 ft gains Advantage on their next saving throw."
+  },
+  {
+    "id": 143,
+    "appearance": "A dark flame appears above the item.",
+    "effect": "The next creature that touches the item takes 1d8 fire damage."
+  },
+  {
+    "id": 144,
+    "appearance": "Your reflection smiles when you do not.",
+    "effect": "Wisdom save DC 14 or be Charmed by the item until the end of your next turn."
+  },
+  {
+    "id": 145,
+    "appearance": "The item briefly becomes impossibly cold.",
+    "effect": "Take 1d8 cold damage and your speed is reduced by 10 ft until your next turn."
+  },
+  {
+    "id": 146,
+    "appearance": "A pulse knocks against your skull.",
+    "effect": "Take 1d6 psychic damage and gain Advantage on your next Intelligence check."
+  },
+  {
+    "id": 147,
+    "appearance": "A faint protective sigil appears.",
+    "effect": "Gain +2 AC against the next attack that targets you."
+  },
+  {
+    "id": 148,
+    "appearance": "The item briefly attracts loose objects.",
+    "effect": "Small unattended objects within 10 ft slide toward you."
+  },
+  {
+    "id": 149,
+    "appearance": "A whisper says, \"Run.\"",
+    "effect": "You may immediately move up to half your speed as a Reaction."
+  },
+  {
+    "id": 150,
+    "appearance": "The item suddenly becomes hostile to its surroundings.",
+    "effect": "One unattended object within 10 ft is damaged or broken."
+  },
+  {
+    "id": 151,
+    "appearance": "A shadowy duplicate of you appears for a moment.",
+    "effect": "The next attack against you before your next turn has Disadvantage."
+  },
+  {
+    "id": 152,
+    "appearance": "A burst of green light surrounds you.",
+    "effect": "You gain Advantage on your next saving throw against Poison."
+  },
+  {
+    "id": 153,
+    "appearance": "The item briefly reveals hidden writing nearby.",
+    "effect": "For 1 minute, you can see invisible writing and hidden text within 30 ft."
+  },
+  {
+    "id": 154,
+    "appearance": "A pulse of darkness spreads outward.",
+    "effect": "Nonmagical light sources within 15 ft are extinguished."
+  },
+  {
+    "id": 155,
+    "appearance": "The item becomes warm enough to comfort you.",
+    "effect": "You gain Resistance to fire damage until the end of your next turn."
+  },
+  {
+    "id": 156,
+    "appearance": "A sudden memory that isn't yours fills your mind.",
+    "effect": "Make a DC 13 Wisdom save or be Incapacitated until the end of your next turn."
+  },
+  {
+    "id": 157,
+    "appearance": "The item briefly becomes impossibly loud.",
+    "effect": "You and creatures within 5 ft take 1d4 thunder damage."
+  },
+  {
+    "id": 158,
+    "appearance": "A tiny spectral hand emerges from the item.",
+    "effect": "It can manipulate one unattended object within 10 ft before vanishing."
+  },
+  {
+    "id": 159,
+    "appearance": "The item marks the nearest doorway with a faint glow.",
+    "effect": "For 1 hour, you know the direction of the nearest exit from your current location."
+  },
+  {
+    "id": 160,
+    "appearance": "A dark pulse travels through your body.",
+    "effect": "Gain Advantage on your next Strength check, but take 1d4 necrotic damage."
+  },
+  {
+    "id": 161,
+    "appearance": "The item briefly becomes weightless.",
+    "effect": "You can jump twice your normal distance until the end of your next turn."
+  },
+  {
+    "id": 162,
+    "appearance": "A faint shield appears around you.",
+    "effect": "Reduce the next instance of damage you take by 1d8."
+  },
+  {
+    "id": 163,
+    "appearance": "The item emits a strange musical note.",
+    "effect": "You gain Advantage on your next Performance check."
+  },
+  {
+    "id": 164,
+    "appearance": "A cold breeze circles you.",
+    "effect": "Creatures have Disadvantage on Opportunity Attacks against you until your next turn."
+  },
+  {
+    "id": 165,
+    "appearance": "The item briefly attracts animals.",
+    "effect": "All non-hostile beasts within 30 ft approach you unless prevented."
+  },
+  {
+    "id": 166,
+    "appearance": "A red pulse marks your target.",
+    "effect": "Choose one creature you can see; your next attack against it has Advantage."
+  },
+  {
+    "id": 167,
+    "appearance": "The item briefly becomes difficult to hold.",
+    "effect": "Dexterity save DC 13 or drop it."
+  },
+  {
+    "id": 168,
+    "appearance": "A faint crown appears above your head.",
+    "effect": "Gain Advantage on your next Intimidation or Persuasion check."
+  },
+  {
+    "id": 169,
+    "appearance": "A black tear rolls down your cheek.",
+    "effect": "Take 1d4 psychic damage and become immune to being Charmed until the end of the scene."
+  },
+  {
+    "id": 170,
+    "appearance": "The item briefly absorbs sound.",
+    "effect": "You create a 10-ft-radius area of silence centered on yourself until the start of your next turn."
+  },
+  {
+    "id": 171,
+    "appearance": "A pulse of radiant energy flashes outward.",
+    "effect": "Undead within 10 ft take 2d6 radiant damage."
+  },
+  {
+    "id": 172,
+    "appearance": "The item briefly becomes translucent and shows something hidden inside.",
+    "effect": "You learn whether the item currently carries a curse or magical effect."
+  },
+  {
+    "id": 173,
+    "appearance": "A dark mark appears on the nearest hostile creature.",
+    "effect": "That creature has Disadvantage on its next attack roll."
+  },
+  {
+    "id": 174,
+    "appearance": "The item briefly becomes incredibly stable.",
+    "effect": "You cannot be knocked Prone until the end of your next turn."
+  },
+  {
+    "id": 175,
+    "appearance": "A surge of courage fills you.",
+    "effect": "End the Frightened condition on yourself and gain 1d6 Temporary HP."
+  },
+  {
+    "id": 176,
+    "appearance": "The item emits a pulse that disturbs magic.",
+    "effect": "The next spell cast within 10 ft of you has its caster make a DC 12 spellcasting ability check or the spell fizzles."
+  },
+  {
+    "id": 177,
+    "appearance": "A faint spectral armor covers you.",
+    "effect": "Gain +1 AC until the end of your next turn."
+  },
+  {
+    "id": 178,
+    "appearance": "The item briefly reveals nearby life.",
+    "effect": "You know the number of living creatures within 30 ft, but not their locations."
+  },
+  {
+    "id": 179,
+    "appearance": "A tiny black flame follows your hand.",
+    "effect": "Your next melee hit deals an extra 1d6 necrotic damage."
+  },
+  {
+    "id": 180,
+    "appearance": "The item briefly becomes extremely fragile.",
+    "effect": "If it takes damage before the end of the scene, it suffers a minor crack or cosmetic flaw."
+  },
+  {
+    "id": 181,
+    "appearance": "A strange force pulls at your feet.",
+    "effect": "Strength save DC 12 or your movement is halved until the end of your next turn."
+  },
+  {
+    "id": 182,
+    "appearance": "The item briefly grants perfect balance.",
+    "effect": "You automatically succeed on your next check made to avoid falling or slipping."
+  },
+  {
+    "id": 183,
+    "appearance": "A whisper reveals an enemy's weakness.",
+    "effect": "Your next successful attack against a creature ignores Resistance to one damage type."
+  },
+  {
+    "id": 184,
+    "appearance": "A pulse of darkness surrounds your head.",
+    "effect": "You cannot be detected by magical means until the start of your next turn."
+  },
+  {
+    "id": 185,
+    "appearance": "The item briefly becomes radiant.",
+    "effect": "You shed bright light for 20 ft and dim light for another 20 ft for 1 hour."
+  },
+  {
+    "id": 186,
+    "appearance": "A sharp ringing fills the area.",
+    "effect": "Creatures within 10 ft must make a DC 12 Constitution save or be Deafened until the end of their next turn."
+  },
+  {
+    "id": 187,
+    "appearance": "The item briefly steals your breath.",
+    "effect": "You cannot speak or use verbal spell components until the end of your next turn."
+  },
+  {
+    "id": 188,
+    "appearance": "A warm pulse restores your strength.",
+    "effect": "End one effect reducing your Strength or speed."
+  },
+  {
+    "id": 189,
+    "appearance": "The item briefly becomes magnetically charged.",
+    "effect": "One unattended metal object within 20 ft moves up to 10 ft toward you."
+  },
+  {
+    "id": 190,
+    "appearance": "A ghostly eye appears above you.",
+    "effect": "For 1 minute, you have Advantage on Perception checks but cannot benefit from being Hidden."
+  },
+  {
+    "id": 191,
+    "appearance": "A dark echo repeats your last words.",
+    "effect": "You must make a DC 12 Charisma save or be unable to speak above a whisper for 1 minute."
+  },
+  {
+    "id": 192,
+    "appearance": "The item briefly opens a view into a distant place.",
+    "effect": "You glimpse a random location within 1 mile for a few seconds."
+  },
+  {
+    "id": 193,
+    "appearance": "A surge of vitality fills your body.",
+    "effect": "Regain 2d8 HP, but your speed is reduced by 5 ft until the next short rest."
+  },
+  {
+    "id": 194,
+    "appearance": "The item briefly becomes unbearably cold.",
+    "effect": "Take 2d6 cold damage; Constitution save DC 13 for half."
+  },
+  {
+    "id": 195,
+    "appearance": "A tiny spectral creature crawls from the item.",
+    "effect": "It follows you for 10 minutes and can perform simple harmless tasks."
+  },
+  {
+    "id": 196,
+    "appearance": "The item pulses in response to danger.",
+    "effect": "You cannot be Surprised until the end of the next minute."
+  },
+  {
+    "id": 197,
+    "appearance": "A dark aura surrounds your weapon.",
+    "effect": "Your next critical hit deals an extra 2d6 necrotic damage."
+  },
+  {
+    "id": 198,
+    "appearance": "The item briefly remembers its previous owner.",
+    "effect": "You hear a short sentence from the item's former wielder, chosen by the GM."
+  },
+  {
+    "id": 199,
+    "appearance": "A sudden wave of calm passes through you.",
+    "effect": "You gain Advantage on your next Wisdom saving throw."
+  },
+  {
+    "id": 200,
+    "appearance": "The item briefly becomes impossibly bright.",
+    "effect": "Creatures within 10 ft must make a DC 13 Constitution save or be Blinded until the start of your next turn."
   }
 ]
